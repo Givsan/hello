@@ -1,0 +1,307 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #004080;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing:border-box;
+    justify-content:space-between;
+}
+
+/* Logo and text in header */
+.header-content {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap:nowrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Push navigation to the right */
+    padding:10px;
+}
+
+#ku-logo {
+    width: 80px;
+    height:auto;
+    margin-right: 15px;
+}
+
+.logo-text h1, .logo-text h2 {
+    margin: 0;
+    padding:0;
+    color: white;
+}
+
+.logo-text h1 {
+    font-size: 1.2em;
+}
+
+.logo-text h2 {
+    font-size: 0.8em;
+}
+
+/* Navigation styles */
+nav {
+    margin-left: auto; /* Align navigation to the right */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffdd00;
+}
+
+/* Main content */
+main {
+    padding-top: 90px;
+    height:auto;
+    text-align: center;
+    color: #004080;
+}
+
+/* Welcome section with background image */
+.welcome-section {
+    margin:0;
+    background-image: url('Traverse.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    min-height: calc(100vh - 60px);
+    padding:20px;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    overflow:hidden;
+}
+
+.welcome-section h1 {
+    font-size: 4.5em;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.8em;
+    max-width: 800px;
+    color: whitesmoke;
+    margin: 0 auto;
+}
+
+/* Form styles */
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #004080;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #003060;
+}
+
+/* Results section */
+#results {
+    margin-top: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+/* About Me section */
+#about-me {
+    text-align: center;
+    max-width:600px;
+    margin:20px auto;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+#about-me img {
+    width: 400px;
+    border-radius: 50%;
+}
+
+#about-me p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Navigation links for back */
+a {
+    display: block;
+    margin-top: 20px;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* Additional Styles */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.content-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.content-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.content-box table td {
+    padding: 10px;
+}
+
+.content-box table td input {
+    width: calc(50% - 20px);
+    margin-right: 10px;
+}
+
+.content-box h3 {
+    margin-top: 0;
+}
+
+#results {
+    margin-top: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.hidden {
+    display: none;
+}
+
+.navigation-links {
+    margin-top: 20px;
+}
+
+.navigation-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation-links a:hover {
+    color: whitesmoke;
+}
+
+
+.fixed-background {
+    background-image: url('Traverse.jpg');
+    background-size: cover; /* Ensures the background image covers the entire element */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-position: center center; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section Header styles */
+.section-header {
+    display: flex;
+    width:100%;
+    justify-content: center; 
+    align-items: center;     
+    height: 100px;           
+    background-color: #004080; 
+    color: white;            
+    margin-bottom: 20px;     
+    text-align: center;     
+    padding: 20px 0;
+    margin:0;
+    box-sizing: broder-box;
+}
+
+.section-header h2 {
+    margin: 0;               
+    font-size: 2.5em;        
+    width: 100%; 
+    background:transparent;            
+}
+
+
+
+
+
